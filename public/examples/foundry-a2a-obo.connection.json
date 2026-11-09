@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "category": "RemoteA2A",
+    "target": "https://a2a.example.invalid",
+    "authType": "AgentOnBehalfOfUser",
+    "scopes": [
+      "api://<API_APP_ID>/session:scope:analyst"
+    ],
+    "metadata": {
+      "ApiType": "Azure"
+    }
+  }
+}

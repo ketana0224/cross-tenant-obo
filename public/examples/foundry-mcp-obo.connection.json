@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "category": "RemoteTool",
+    "target": "https://mcp.example.invalid/mcp",
+    "authType": "AgentOnBehalfOfUser",
+    "scopes": [
+      "api://<API_APP_ID>/session:scope:analyst"
+    ],
+    "metadata": {
+      "type": "generic_mcp"
+    }
+  }
+}

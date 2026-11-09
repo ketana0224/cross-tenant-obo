@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "category": "RemoteTool",
+    "target": "https://mcp.example.invalid/mcp",
+    "authType": "ProjectManagedIdentity",
+    "audience": "api://<API_APP_ID>",
+    "metadata": {
+      "type": "generic_mcp"
+    }
+  }
+}

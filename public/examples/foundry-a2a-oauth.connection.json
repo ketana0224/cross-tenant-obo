@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "category": "RemoteA2A",
+    "target": "https://a2a.example.invalid",
+    "authType": "OAuth2",
+    "authorizationUrl": "https://login.microsoftonline.com/<API_TENANT_ID>/oauth2/v2.0/authorize",
+    "tokenUrl": "https://login.microsoftonline.com/<API_TENANT_ID>/oauth2/v2.0/token",
+    "refreshUrl": "https://login.microsoftonline.com/<API_TENANT_ID>/oauth2/v2.0/token",
+    "scopes": [
+      "api://<API_APP_ID>/session:scope:analyst",
+      "offline_access"
+    ],
+    "credentials": {
+      "clientId": "<OAUTH_CLIENT_ID>",
+      "clientSecret": "<SET_PRIVATELY_DO_NOT_COMMIT>"
+    },
+    "metadata": {
+      "ApiType": "Azure"
+    }
+  }
+}
