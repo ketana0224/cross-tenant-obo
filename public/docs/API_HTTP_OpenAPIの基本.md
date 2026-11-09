@@ -135,7 +135,7 @@ sequenceDiagram
     participant Entra as プロジェクトMIの所属テナントのEntra ID
     participant API as APIサーバー
 
-    Note over Auth,API: 事前準備：Entra管理者がAPIのアプリロールをプロジェクトMIに割り当てる
+    Note over Auth,API: 事前準備：認証用Entraアプリの登録、アプリロールの公開、プロジェクトMIへの割当
     Agent->>Auth: 設定済みのプロジェクトMI接続でAPI呼び出しを依頼
     Auth->>Entra: プロジェクトMIとしてAPI向けトークンを要求
     Entra-->>Auth: MIトークン（aud：API、主体：プロジェクトMI、roles：アプリロール）
@@ -165,7 +165,7 @@ sequenceDiagram
 
 ### プロジェクトMIの設定と実行
 
-1. **API開発者・Entra管理者**がAPI用Entraアプリとアプリロールを用意する。
+1. **API開発者・Entra管理者**がAPIの認証先テナントにAPI用Entraアプリを登録し、アプリロールを公開する。A07・A10ではプロジェクトMIと同じ認証先テナントにシングルテナント登録した。
 2. **Entra管理者**が必要なAPIアプリロールをFoundryのプロジェクトMIに割り当てる。
 3. **Foundry開発者**がOpenAPIプロジェクト接続にAPIのTarget URL、期待するAudience、プロジェクトMI認証を設定する。
 4. **Foundry開発者**がOpenAPIツールにOpenAPI定義と使用する接続を指定し、エージェントから利用できるようにする。
