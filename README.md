@@ -11,6 +11,8 @@ Copilot Studio と Microsoft Foundry のマルチテナント連携について�
 | 資料 | 内容 |
 | --- | --- |
 | [構成・用語](public/docs/構成と用語.md) | 2テナント、API／MCP／A2A、認証と認可の区別 |
+| [OBOの基本](public/docs/OBOの基本.md) | トークンの流れ、入口・委任同意・業務認可、スコープと承認の関係 |
+| [アプリ認証／MIの基本](public/docs/アプリ認証とMIの基本.md) | アプリ自身でのアクセス、MI、権限付与とAPI側の確認、OBOとの違い |
 | [API：HTTP／OpenAPIの基本](public/docs/API_HTTP_OpenAPIの基本.md) | HTTPとOpenAPIの違い、トークン、認可、製品別の設定と検証範囲 |
 | [MCPの基本](public/docs/MCPの基本.md) | ツール通信、Entra認証・認可、OBO／個別OAuth／MIの図と成立条件 |
 | [A2Aの基本](public/docs/A2Aの基本.md) | エージェント間通信、Agent Card、OBO／個別OAuth／MIの図と検証範囲 |

@@ -12,14 +12,16 @@ Copilot Studio と Microsoft Foundry について、次を分けて成立・非�
 ## 読む順番
 
 1. [構成・用語](docs/構成と用語.md)
-2. [API：HTTP／OpenAPIの基本](docs/API_HTTP_OpenAPIの基本.md)
-3. [MCPの基本](docs/MCPの基本.md)
-4. [A2Aの基本](docs/A2Aの基本.md)
-5. [認証方式ごとの成立条件](docs/認証方式と成立条件.md)
-6. [本人委任・API／MCPマトリクス](docs/本人委任_API_MCPマトリクス.md)
-7. [アプリ認証マトリクス](docs/アプリ認証マトリクス.md)
-8. [A2Aマトリクス](docs/A2A認証マトリクス.md)
-9. [検証方法・限界](docs/検証方法と限界.md)、[設定テンプレート](examples/README.md)
+2. [OBOの基本](docs/OBOの基本.md)
+3. [アプリ認証／MIの基本](docs/アプリ認証とMIの基本.md)
+4. [API：HTTP／OpenAPIの基本](docs/API_HTTP_OpenAPIの基本.md)
+5. [MCPの基本](docs/MCPの基本.md)
+6. [A2Aの基本](docs/A2Aの基本.md)
+7. [認証方式ごとの成立条件](docs/認証方式と成立条件.md)
+8. [本人委任・API／MCPマトリクス](docs/本人委任_API_MCPマトリクス.md)
+9. [アプリ認証マトリクス](docs/アプリ認証マトリクス.md)
+10. [A2Aマトリクス](docs/A2A認証マトリクス.md)
+11. [検証方法・限界](docs/検証方法と限界.md)、[設定テンプレート](examples/README.md)
 
 ## 確認済み範囲の早見表
 

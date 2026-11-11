@@ -11,6 +11,8 @@
 
 /public/docs/*
 !/public/docs/構成と用語.md
+!/public/docs/OBOの基本.md
+!/public/docs/アプリ認証とMIの基本.md
 !/public/docs/API_HTTP_OpenAPIの基本.md
 !/public/docs/MCPの基本.md
 !/public/docs/A2Aの基本.md
