@@ -309,7 +309,7 @@ Foundry開発者がA2Aツールに接続を関連付ける。MCP用の `RemoteTo
 
 本書の○を、A2A 1.0の新しいツール、すべてのFoundry間連携、すべてのチャネルで確認済みとは扱わない。A2Aツールの提供状態と、本人OBO認証方式のプレビュー状態も別々に確認する。
 
-[本人OBOの設定例](../examples/foundry-a2a-obo.connection.json)・[個別OAuthの設定例](../examples/foundry-a2a-oauth.connection.json)は匿名化した概念テンプレート。使用するAPIバージョン・SDK・ツールの仕様は公式資料で確認する。
+[本人OBOの設定例](../../examples/foundry-a2a-obo.connection.json)・[個別OAuthの設定例](../../examples/foundry-a2a-oauth.connection.json)は匿名化した概念テンプレート。使用するAPIバージョン・SDK・ツールの仕様は公式資料で確認する。
 
 ## 7. Copilot StudioのA2A連携
 

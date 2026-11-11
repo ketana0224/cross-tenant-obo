@@ -33,4 +33,4 @@ OAuth例の `clientSecret` は説明用プレースホルダーであり、secre
 
 スコープ名 `session:scope:analyst` は今回の疑似APIの例。任意の実APIに共通のスコープではない。`/.default` を任意の接続へ機械的に置き換えない。
 
-詳しくは[成立条件](../docs/認証方式と成立条件.md)・[検証方法](../docs/検証方法と限界.md)・[公開ポリシー](../docs/公開と非公開のポリシー.md)。
+詳しくは[成立条件](../docs/Preview/認証方式と成立条件.md)・[検証方法](../docs/Preview/検証方法と限界.md)・[公開ポリシー](../docs/Preview/公開と非公開のポリシー.md)。

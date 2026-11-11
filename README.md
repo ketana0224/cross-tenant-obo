@@ -10,20 +10,25 @@ Copilot Studio と Microsoft Foundry のマルチテナント連携について�
 
 | 資料 | 内容 |
 | --- | --- |
-| [構成・用語](public/docs/構成と用語.md) | 2テナント、API／MCP／A2A、認証と認可の区別 |
+| [構成・用語](public/docs/Preview/構成と用語.md) | 2テナント、API／MCP／A2A、認証と認可の区別 |
 | [OBOの基本](public/docs/OBOの基本.md) | トークンの流れ、入口・委任同意・業務認可、スコープと承認の関係 |
+| [クロステナントOBO-ゲストユーザー](public/docs/クロステナントOBO-ゲストユーザー.md) | M365の利用者をAzureにゲスト招待し、FoundryからAzure内の下流へ本人の代理でアクセスする構成 |
+| [クロステナントOBO-非ゲストユーザー](public/docs/クロステナントOBO-非ゲストユーザー.md) | Azure側に本人を登録せず、認証先をAzureに固定した場合のOBOの制約 |
 | [アプリ認証／MIの基本](public/docs/アプリ認証とMIの基本.md) | アプリ自身でのアクセス、MI、権限付与とAPI側の確認、OBOとの違い |
-| [API：HTTP／OpenAPIの基本](public/docs/API_HTTP_OpenAPIの基本.md) | HTTPとOpenAPIの違い、トークン、認可、製品別の設定と検証範囲 |
-| [MCPの基本](public/docs/MCPの基本.md) | ツール通信、Entra認証・認可、OBO／個別OAuth／MIの図と成立条件 |
-| [A2Aの基本](public/docs/A2Aの基本.md) | エージェント間通信、Agent Card、OBO／個別OAuth／MIの図と検証範囲 |
-| [成立条件](public/docs/認証方式と成立条件.md) | OBO、個別OAuth、アプリ認証の前提 |
-| [API／MCP・本人委任のマトリクス](public/docs/本人委任_API_MCPマトリクス.md) | 22構成とMCPの条件変更後2構成 |
-| [アプリ認証のマトリクス](public/docs/アプリ認証マトリクス.md) | 12構成と中間APIの追加構成 |
-| [A2Aのマトリクス](public/docs/A2A認証マトリクス.md) | Foundryの16構成：本人OBO・個別OAuth・MI・匿名負対照 |
-| [検証方法と証跡の限界](public/docs/検証方法と限界.md) | 成功の判断、失敗の分類、未検証範囲 |
+| [クロステナントアプリ認証とMI-ゲストユーザー](public/docs/クロステナントアプリ認証とMI-ゲストユーザー.md) | M365の利用者からAzureのFoundryへアクセスし、Azure内のMIで下流を呼ぶ構成 |
+| [クロステナントアプリ認証とMI-非ゲストユーザー](public/docs/クロステナントアプリ認証とMI-非ゲストユーザー.md) | Azure側に本人を登録しない直接アクセスの制約と、MIの下流アクセスとの区別 |
+| [API：HTTP／OpenAPIの基本](public/docs/Preview/API_HTTP_OpenAPIの基本.md) | HTTPとOpenAPIの違い、トークン、認可、製品別の設定と検証範囲 |
+| [MCPの基本](public/docs/Preview/MCPの基本.md) | ツール通信、Entra認証・認可、OBO／個別OAuth／MIの図と成立条件 |
+| [A2Aの基本](public/docs/Preview/A2Aの基本.md) | エージェント間通信、Agent Card、OBO／個別OAuth／MIの図と検証範囲 |
+| [成立条件](public/docs/Preview/認証方式と成立条件.md) | OBO、個別OAuth、アプリ認証の前提 |
+| [検証結果統合マトリクス](public/docs/検証結果統合マトリクス.md) | 初期検証・本人委任・アプリ認証を統合し、MCP・A2A・その他の表に分類。未検証・条件変更・旧構成を区別 |
+| [API／MCP・本人委任のマトリクス](public/docs/Preview/本人委任_API_MCPマトリクス.md) | 22構成とMCPの条件変更後2構成 |
+| [アプリ認証のマトリクス](public/docs/Preview/アプリ認証マトリクス.md) | 12構成と中間APIの追加構成 |
+| [A2Aのマトリクス](public/docs/Preview/A2A認証マトリクス.md) | Foundryの16構成：本人OBO・個別OAuth・MI・匿名負対照 |
+| [検証方法と証跡の限界](public/docs/Preview/検証方法と限界.md) | 成功の判断、失敗の分類、未検証範囲 |
 | [匿名化した設定例](public/examples/README.md) | 実環境の値を含まない接続テンプレート |
 
-記録対象の検証期間：**2026-11-02〜2026-11-09**。公開資料は既存の検証記録から作成した匿名化要約であり、今回の公開整理に伴う実機再検証ではありません。プレビュー機能・ライセンス・仕様は変わり得ます。
+記録対象の検証期間：**2026-11-01〜2026-11-09**。公開資料は既存の検証記録から作成した匿名化要約であり、今回の公開整理に伴う実機再検証ではありません。プレビュー機能・ライセンス・仕様は変わり得ます。
 
 ## 公開／非公開の構成
 
@@ -32,6 +37,7 @@ README.md             公開する入口
 .gitignore            公開対象の明示的な許可リスト
 public/               新規作成した匿名化資料と設定テンプレート
   docs/
+    Preview/          その他の参考資料
   examples/
 private/              今後の非公開成果物・既存資産へのローカル索引
 既存の各フォルダー    移動・上書きせず保持。既定でGit対象外
@@ -41,4 +47,4 @@ private/              今後の非公開成果物・既存資産へのローカ�
 
 既存資産は移動・変更していません。ルートREADMEと、承認された `.gitignore` だけを更新しています。フォルダー分離はアクセス制御ではなく、`.gitignore` は既に追跡されたファイルやGit履歴から情報を消す仕組みでもありません。
 
-公開前の確認手順は [公開ポリシー](public/docs/公開と非公開のポリシー.md) を参照してください。GitHubへのpush、公開範囲の変更、ライセンスの決定はこの整理作業には含みません。
+公開前の確認手順は [公開ポリシー](public/docs/Preview/公開と非公開のポリシー.md) を参照してください。GitHubへのpush、公開範囲の変更、ライセンスの決定はこの整理作業には含みません。

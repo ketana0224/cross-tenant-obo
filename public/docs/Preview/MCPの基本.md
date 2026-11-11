@@ -290,7 +290,7 @@ sequenceDiagram
 
 接続設定だけでツール利用が完了するわけではない。Foundry開発者がエージェントのMCPツールへ接続を関連付け、必要なプロジェクト利用権限とツール実行承認も確認する。
 
-[本人OBOの設定例](../examples/foundry-mcp-obo.connection.json)・[プロジェクトMIの設定例](../examples/foundry-mcp-mi.connection.json)は匿名化した概念テンプレート。APIバージョン・SDK・必要な設定は[公式資料](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol)で確認する。
+[本人OBOの設定例](../../examples/foundry-mcp-obo.connection.json)・[プロジェクトMIの設定例](../../examples/foundry-mcp-mi.connection.json)は匿名化した概念テンプレート。APIバージョン・SDK・必要な設定は[公式資料](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol)で確認する。
 
 ## 7. Copilot StudioのMCP連携
 
