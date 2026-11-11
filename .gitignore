@@ -10,6 +10,7 @@
 
 /public/docs/*
 !/public/docs/OBOの基本.md
+!/public/docs/個別OAuthの基本.md
 !/public/docs/クロステナントOBO-ゲストユーザー.md
 !/public/docs/クロステナントOBO-非ゲストユーザー.md
 !/public/docs/アプリ認証とMIの基本.md

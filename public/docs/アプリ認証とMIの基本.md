@@ -116,6 +116,6 @@ API側には、注文情報を読む処理を実装し、**`roles` に `Orders.R
 - [Microsoft Entra ID：AzureリソースのマネージドID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview)
 - [Foundry：MCPサーバーの認証設定](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication)
 
-関連：[OBOの基本](OBOの基本.md)。製品別の設定要件は[認証方式ごとの成立条件](Preview/認証方式と成立条件.md)、実機結果は[アプリ認証マトリクス](Preview/アプリ認証マトリクス.md)を参照。
+関連：[OBOの基本](OBOの基本.md)、[個別OAuthの基本](個別OAuthの基本.md)。製品別の設定要件は[認証方式ごとの成立条件](Preview/認証方式と成立条件.md)、実機結果は[アプリ認証マトリクス](Preview/アプリ認証マトリクス.md)を参照。
 
 次：[クロステナントアプリ認証とMI-ゲストユーザー](クロステナントアプリ認証とMI-ゲストユーザー.md)。

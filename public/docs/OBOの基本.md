@@ -219,4 +219,6 @@ Entra管理センターでアプリを登録すると、同じテナントに対
 - [Foundry：ツールのユーザー委任設定](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-user-delegation)
 - [Foundry：委任アクセスのEntra同意](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/entra-delegated-access-consent)
 
+関連：[個別OAuthの基本](個別OAuthの基本.md)、[アプリ認証とMIの基本](アプリ認証とMIの基本.md)。
+
 次：[クロステナントOBO-ゲストユーザー](クロステナントOBO-ゲストユーザー.md)。
