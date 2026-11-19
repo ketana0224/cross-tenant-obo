@@ -18,6 +18,14 @@
 !/public/docs/クロステナントアプリ認証とMI-非ゲストユーザー.md
 !/public/docs/検証結果統合マトリクス.md
 !/public/docs/Preview/
+!/public/docs/検証詳細/
+
+/public/docs/検証詳細/*
+!/public/docs/検証詳細/README.md
+!/public/docs/検証詳細/Foundry認証とクロステナント検証.md
+!/public/docs/検証詳細/APIMと外部認可API検証.md
+!/public/docs/検証詳細/CopilotStudioとM365Copilot検証.md
+!/public/docs/検証詳細/再検証手順と記録項目.md
 
 /public/docs/Preview/*
 !/public/docs/Preview/構成と用語.md
